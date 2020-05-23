@@ -8,7 +8,7 @@
   <header>
     <nav>
       <a>
-        <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип город Седона">
+        <img src="img/logo_sedona.svg" width="138" height="70" alt="Логотип город Седона">
       </a>
       <ul>
         <li><a href="">Информация</a></li>
@@ -21,7 +21,7 @@
   <main>
     <section>
       <div>
-        <img src="img/Welcome.png" width="456" height="350" alt=""Добро пожаловть в Седону>
+        <img src="img/welcome.png" width="456" height="350" alt=""Добро пожаловть в Седону>
         <!-- Здесь будет фон-->
       </div>
       <h1>
@@ -38,7 +38,7 @@
           <p>- №1 -</p>
           <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-      <img src="img/cafe_in_Sedona.jpg" width="800" height="256" alt="Фото кафе в Седоне">
+      <img src="img/cafe_in_sedona.jpg" width="800" height="256" alt="Фото кафе в Седоне">
       </div>
       <div>
         <ul>
@@ -91,7 +91,31 @@
       </p>
       <article>
         <h2>Поиск гостиницы в седоне</h2>
-        <!-- Здесь будет форма -->
+        <form>
+            <label for="arrival_date">Дата заезда:</label>
+          <div>
+            <input name="arrival" type="text" id="arrival_date" placeholder="24 апреля 2017">
+            <button type="button">календарь</button>
+          </div>
+            <label for="date_departure">Дата выезда:</label>
+          <div>
+            <input name="departure" type="text" id="date_departure" placeholder="4 июля 2017">
+            <button type="button">календарь</button>
+          </div>
+          <label id="old">Взрослыее</label>
+          <div>
+            <button type="button">-</button>
+            <input name="old" type="number" id="old" step="1">
+            <button type="button">+</button>
+          </div>
+          <label id="child">Дети</label>
+          <div>
+            <button type="button">-</button>
+            <input name="child" type="number" id="child" step="1">
+            <button type="button">+</button>
+          </div>
+          <button type="submit">Найти</button>
+        </form>
       </article>
       <img src="https://via.placeholder.com/150x100" alt="Карта">
     </section>
