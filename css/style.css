@@ -1,0 +1,65 @@
+root {
+  --white: #ffffff;
+  --special-white: rgba(255,255,255,0.5);
+  --black: #000000;
+  --special-dark: rgba(0,0,0,0.5);
+  --light-black: #333333;
+  --blue: #81b3d2;
+  --gray: #eeeeee;
+  --ligth-brown: #766357;
+  --brown: #604e43;
+  --dark-brown: #503e33;
+  --date: #f2f2f2;
+  --date-hover: #ebebeb;
+  --icon-form: #a9a9a9;
+  --find-hover: #669ec0;
+  --find-button: #5496bd;
+  --academy: #321f20;
+  --academy-button: #bdbbbc;
+  --fill: #d8d8d8;
+  --checkbox-block: #6a6a6a;
+  --shadow: #ababab;
+  --icon-up: #cacaca;
+  --rating: #666666;
+}
+
+body{
+  min-width: 1280px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--black);
+  text-transform: uppercase;
+  background-color: var(--gray);
+  background-position: top center;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-nav {
+  background-color: var(--white);
+}
+
+.welcome {
+  height: 509px;
+  background-image: url("../img/mountains.jpg");
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.welcome h1 {
+  background-image: url("../img/background_mountains.png");
+  background-repeat: no-repeat;
+}
+
+
