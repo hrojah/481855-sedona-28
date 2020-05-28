@@ -160,6 +160,7 @@ h1 {
   line-height: 26px;
   color: var(--white);
   background-color: var(--blue);
+  border: none;
   text-align: center;
 }
 
