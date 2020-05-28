@@ -1,8 +1,8 @@
-root {
+:root {
   --white: #ffffff;
-  --special-white: rgba(255,255,255,0.5);
+  --special-white: rgba(255, 255, 255, 0.3);
   --black: #000000;
-  --special-dark: rgba(0,0,0,0.5);
+  --special-black: rgba(0, 0, 0, 0.3);
   --light-black: #333333;
   --blue: #81b3d2;
   --gray: #eeeeee;
@@ -23,7 +23,7 @@ root {
   --rating: #666666;
 }
 
-body{
+body {
   min-width: 1280px;
   margin: 0;
   padding: 0;
@@ -34,7 +34,6 @@ body{
   color: var(--black);
   text-transform: uppercase;
   background-color: var(--gray);
-  background-position: top center;
 }
 
 a {
@@ -46,20 +45,299 @@ img {
   height: auto;
 }
 
+h1 {
+  width: 470px;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+
+}
+
+.visually-hidden {
+  display: none;
+}
+
 .main-nav {
   background-color: var(--white);
 }
 
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+}
+/* index.html */
+
 .welcome {
   height: 509px;
-  background-image: url("../img/mountains.jpg");
+  background-image: url("../img/background_mountains.png"),
+  url("../img/mountains.jpg");
+  background-position: center bottom, center top;
   background-repeat: no-repeat;
   text-align: center;
 }
 
-.welcome h1 {
-  background-image: url("../img/background_mountains.png");
+.main {
+  background-color: var(--white);
+  text-align: center;
+}
+
+.main p {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.main h1 {
+  margin: 0 auto;
+}
+
+.find {
+  line-height: 24px;
+  text-align: center;
+}
+
+.best {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--light-black);
+  background-color: var(--white);
+}
+
+.interesting {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: var(--white);
+}
+
+.find-hotel {
+  color: var(--white);
+  width: 568px;
+  height: 86px;
+  margin: 0 auto;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 26px;
+  background-color: var(--ligth-brown);
+}
+
+.find-hotel:hover {
+  background-color: var(--brown);
+}
+
+.find-hotel:active {
+  color: var(--special-white);
+  background-color: var(--dark-brown);
+}
+
+.date {
+  background-color: var(--white);
+}
+
+.date label {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.button {
+  color: var(--icon-form)
+}
+
+.button:hover {
+  color: var(--black);
+}
+
+.button:active {
+  color: var(--blue);
+}
+
+.submit {
+  padding: 0;
+  width: 458px;
+  height: 58px;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--white);
+  background-color: var(--blue);
+  text-align: center;
+}
+
+.submit:hover {
+  background-color: var(--find-hover);
+}
+
+.submit:active {
+  color: var(--special-white);
+  background-color: var(--find-button);
+}
+
+.contact p{
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 21px;
+  background-color: var(--white);
+}
+
+.contact a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.social {
+  margin: 0;
+  background-color: var(--white);
+}
+
+.social ul {
+  margin: 0;
+  list-style: none;
+}
+
+.twitter {
+  width: 46px;
+  height: 48px;
+  background-color: var(--blue);
+  background-image: url("../img/twitter.svg");
+  background-position: center;
   background-repeat: no-repeat;
 }
+
+.twitter:hover {
+  background-color: var(--find-hover);
+}
+
+.twitter:active {
+  background-image: url("../img/twitter_button.svg");
+}
+
+.facebook {
+  width: 46px;
+  height: 48px;
+  background-color: var(--blue);
+  background-image: url("../img/fb-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.facebook:hover {
+  background-color: var(--find-hover);
+}
+
+.facebook:active {
+  background-image: url("../img/fb_button.svg");
+}
+
+.youtube {
+  width: 46px;
+  height: 48px;
+  background-color: var(--blue);
+  background-image: url("../img/youtube.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.youtube:hover {
+  background-color: var(--find-hover);
+}
+
+.youtube:active {
+  background-image: url("../img/youtube_button.svg");
+}
+
+.academy {
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
+  background-color: var(--white);
+}
+
+.academy a {
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-position: center;
+}
+
+/* hotels.html */
+
+.amara {
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--white);
+}
+
+.amara h2 {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.amara h2:hover {
+  color: var(--blue);
+}
+
+.amara h2:active {
+  color: var(--special-black)
+}
+
+.more {
+  color: var(--white);
+  text-align: center;
+  background-color: var(--blue);
+}
+
+.more:hover {
+  background-color: var(--find-hover);
+}
+
+.more:active {
+  color: var(--special-white);
+  background-color: var(--find-button);
+}
+
+.reserv {
+  color: var(--white);
+  text-align: center;
+  background-color: var(--ligth-brown);
+}
+
+.reserv:hover {
+  background-color: var(--brown);
+}
+
+.reserv:active {
+  color: var(--special-white);
+  background-color: var(--dark-brown);
+}
+
+.rating {
+  color: var(--rating);
+  background-color: var(--date);
+}
+
+.desert {
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--white);
+}
+
+.desert h2 {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.villas {
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--white);
+}
+
+.villas h2 {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
 
 

@@ -25,10 +25,9 @@
     </nav>
   </header>
   <main>
-    <section>
+    <section class="main">
       <div class="welcome">
         <img src="img/welcome.png" width="456" height="350" alt="Добро пожаловать в Седону">
-        <!-- Здесь будет фон-->
       </div>
       <h1>
           Седона - небольшой городок в аризоне,
@@ -50,7 +49,7 @@
         <ul>
           <li>
             <h3>Жилье</h3>
-            <p>Рекумендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li>
             <h3>Еда</h3>
@@ -88,64 +87,63 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="find">
       <h2 class="visually-hidden">Лучшие предложения</h2>
-      <p>Заинтересовались?</p>
-      <p>
+      <p class="interesting">Заинтересовались?</p>
+      <p class="best">
         Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
       <article>
-        <h2>Поиск гостиницы в седоне</h2>
-        <form>
+        <h2 class="find-hotel">Поиск гостиницы в седоне</h2>
+        <form class="date">
           <label for="arrival_date">Дата заезда:</label>
           <div>
             <input name="arrival" type="text" id="arrival_date" placeholder="24 апреля 2017">
-            <button type="button">календарь</button>
+            <button class="button" type="button">календарь</button>
           </div>
           <label for="date_departure">Дата выезда:</label>
           <div>
             <input name="departure" type="text" id="date_departure" placeholder="4 июля 2017">
-            <button type="button">календарь</button>
+            <button class="button" type="button">календарь</button>
           </div>
           <label for="old">Взрослые</label>
           <div>
-            <button type="button">-</button>
+            <button class="button" type="button">-</button>
             <input name="old" type="text" id="old" inputmode="numeric" placeholder="2">
-            <button type="button">+</button>
+            <button class="button" type="button">+</button>
           </div>
           <label for="child">Дети</label>
           <div>
-            <button type="button">-</button>
+            <button class="button" type="button">-</button>
             <input name="child" type="text" id="child" inputmode="numeric" placeholder="0">
-            <button type="button">+</button>
+            <button class="button" type="button">+</button>
           </div>
-          <button type="submit">Найти</button>
+          <button class="submit" type="submit">Найти</button>
         </form>
       </article>
       <img src="img/map.png" alt="штат Аризона, город Седона">
     </section>
   </main>
   <footer>
-    <section>
+    <section class="contact">
       <h2 class="visually-hidden">Контактная информация</h2>
       <p>
         #visitsedona<br>
         <a href="tel:+7(495)6660266">Тел: +7(495) 666-02-66</a>
       </p>
     </section>
-    <section>
+    <section class="social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul>
-        <li><a href="">Twitter</a></li>
-        <li><a href="">Facebook</a></li>
-        <li><a href="">YouTube</a></li>
-        <!-- Здесь будут иконки соцсетей -->
+        <li class="twitter"><a href=""></a></li>
+        <li class="facebook"><a href=""></a></li>
+        <li class="youtube"><a href=""></a></li>
       </ul>
     </section>
-    <p>
+    <p class="academy">
       Website by
-      <a href="https://htmlacademy.ru/intensive/htmlcss">html Academy</a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
       <!-- Здесь будет лого академии -->
     </p>
   </footer>
