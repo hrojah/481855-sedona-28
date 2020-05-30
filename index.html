@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <!--
     <link href="fonts/ptsans.woff2" rel="stylesheet">
     <link href="fonts/ptsansbold.woff2" rel="stylesheet">
     <link href="fonts/ptsans.woff" rel="stylesheet">
-    <link href="fonts/ptsansbold.woff" rel="stylesheet">
+    <link href="fonts/ptsansbold.woff" rel="stylesheet"> -->
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -26,10 +27,10 @@
   </header>
   <main>
     <section class="main">
-      <div class="welcome">
+      <div class="slogan">
         <img src="img/welcome.png" width="456" height="350" alt="Добро пожаловать в Седону">
       </div>
-      <h1>
+      <h1 class="subject">
           Седона - небольшой городок в аризоне,
           заслуживающий большего
       </h1>
@@ -87,36 +88,36 @@
         </div>
       </div>
     </section>
-    <section class="find">
+    <section class="search-hotel-block">
       <h2 class="visually-hidden">Лучшие предложения</h2>
-      <p class="interesting">Заинтересовались?</p>
-      <p class="best">
+      <p class="subtitle">Заинтересовались?</p>
+      <p class="best-offers">
         Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
-      <article>
-        <h2 class="find-hotel">Поиск гостиницы в седоне</h2>
+      <article class="search-hotel-content">
+        <h2 class="search-hotel">Поиск гостиницы в седоне</h2>
         <form class="date">
           <label for="arrival_date">Дата заезда:</label>
           <div>
-            <input name="arrival" type="text" id="arrival_date" placeholder="24 апреля 2017">
+            <input class="prompt" name="arrival" type="text" id="arrival_date" placeholder="24 апреля 2017">
             <button class="button" type="button">календарь</button>
           </div>
           <label for="date_departure">Дата выезда:</label>
           <div>
-            <input name="departure" type="text" id="date_departure" placeholder="4 июля 2017">
+            <input class="prompt" name="departure" type="text" id="date_departure" placeholder="4 июля 2017">
             <button class="button" type="button">календарь</button>
           </div>
           <label for="old">Взрослые</label>
           <div>
             <button class="button" type="button">-</button>
-            <input name="old" type="text" id="old" inputmode="numeric" placeholder="2">
+            <input class="prompt" name="old" type="text" id="old" inputmode="numeric" placeholder="2">
             <button class="button" type="button">+</button>
           </div>
           <label for="child">Дети</label>
           <div>
             <button class="button" type="button">-</button>
-            <input name="child" type="text" id="child" inputmode="numeric" placeholder="0">
+            <input class="prompt" name="child" type="text" id="child" inputmode="numeric" placeholder="0">
             <button class="button" type="button">+</button>
           </div>
           <button class="submit" type="submit">Найти</button>
@@ -126,7 +127,7 @@
     </section>
   </main>
   <footer>
-    <section class="contact">
+    <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
       <p>
         #visitsedona<br>
@@ -136,15 +137,14 @@
     <section class="social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul>
-        <li class="twitter"><a href=""></a></li>
-        <li class="facebook"><a href=""></a></li>
-        <li class="youtube"><a href=""></a></li>
+        <li class="twitter" aria-label="twitter"><a href=""></a></li>
+        <li class="facebook" aria-label="facebook"><a href=""></a></li>
+        <li class="youtube" aria-label="youtube"><a href=""></a></li>
       </ul>
     </section>
-    <p class="academy">
+    <p class="logo">
       Website by
-      <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
-      <!-- Здесь будет лого академии -->
+      <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="html-academy"></a>
     </p>
   </footer>
   </body>

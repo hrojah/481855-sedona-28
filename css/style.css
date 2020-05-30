@@ -21,6 +21,15 @@
   --shadow: #ababab;
   --icon-up: #cacaca;
   --rating: #666666;
+  --border: #e5e5e5;
+}
+
+@font-face {
+  font-family: "PT sans";
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  src: url("../fonts/ptsans.woff") format("woff");
+  src: url("../fonts/ptsansbold.woff") format("woff");
 }
 
 body {
@@ -45,16 +54,19 @@ img {
   height: auto;
 }
 
-h1 {
+.subject {
   width: 470px;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
-
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .main-nav {
@@ -65,13 +77,18 @@ h1 {
   list-style: none;
   margin: 0;
 }
+
+.main-nav a {
+  line-height: 26px;
+  color: var(--black);
+}
 /* index.html */
 
-.welcome {
+.slogan {
   height: 509px;
   background-image: url("../img/background_mountains.png"),
-  url("../img/mountains.jpg");
-  background-position: center bottom, center top;
+                    url("../img/mountains.jpg");
+  background-position: center bottom -1px, center top;
   background-repeat: no-repeat;
   text-align: center;
 }
@@ -90,12 +107,12 @@ h1 {
   margin: 0 auto;
 }
 
-.find {
+.search-hotel-block {
   line-height: 24px;
   text-align: center;
 }
 
-.best {
+.best-offers {
   margin: 0;
   font-size: 14px;
   font-weight: normal;
@@ -103,14 +120,18 @@ h1 {
   background-color: var(--white);
 }
 
-.interesting {
+.subtitle {
   margin: 0;
   font-size: 30px;
   font-weight: bold;
   background-color: var(--white);
 }
 
-.find-hotel {
+.search-hotel-content{
+  background-color: var(--white);
+}
+
+.search-hotel {
   color: var(--white);
   width: 568px;
   height: 86px;
@@ -121,17 +142,13 @@ h1 {
   background-color: var(--ligth-brown);
 }
 
-.find-hotel:hover {
+.search-hotel:hover {
   background-color: var(--brown);
 }
 
-.find-hotel:active {
+.search-hotel:active {
   color: var(--special-white);
   background-color: var(--dark-brown);
-}
-
-.date {
-  background-color: var(--white);
 }
 
 .date label {
@@ -140,8 +157,29 @@ h1 {
   line-height: 24px;
 }
 
+.prompt {
+  background-color: var(--date);
+  border: none;
+}
+
+.prompt:hover {
+  background-color: var(--date-hover);
+}
+
+.prompt:focus {
+  background-color: var(--white);
+  border: 2px solid var(--border);
+}
+
+.prompt::placeholder {
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--black);
+}
+
 .button {
-  color: var(--icon-form)
+  color: var(--icon-form);
+  border: none;
 }
 
 .button:hover {
@@ -150,6 +188,10 @@ h1 {
 
 .button:active {
   color: var(--blue);
+}
+
+.button:focus {
+  color: var(--black);
 }
 
 .submit {
@@ -173,7 +215,11 @@ h1 {
   background-color: var(--find-button);
 }
 
-.contact p{
+.submit:focus {
+  background-color: var(--find-hover);
+}
+
+.contacts p{
   margin: 0;
   font-size: 26px;
   font-weight: bold;
@@ -181,7 +227,8 @@ h1 {
   background-color: var(--white);
 }
 
-.contact a {
+.contacts a {
+  display: block;
   color: var(--black);
   text-decoration: none;
 }
@@ -213,6 +260,10 @@ h1 {
   background-image: url("../img/twitter_button.svg");
 }
 
+.twitter:focus {
+  background-color: var(--find-hover);
+}
+
 .facebook {
   width: 46px;
   height: 48px;
@@ -230,6 +281,9 @@ h1 {
   background-image: url("../img/fb_button.svg");
 }
 
+.facebook:focus {
+  background-color: var(--find-hover);
+}
 .youtube {
   width: 46px;
   height: 48px;
@@ -247,38 +301,61 @@ h1 {
   background-image: url("../img/youtube_button.svg");
 }
 
-.academy {
+.youtube:focus {
+  background-color: var(--find-hover);
+}
+
+.logo {
   margin: 0;
   font-size: 14px;
   line-height: 26px;
   background-color: var(--white);
 }
 
-.academy a {
+.logo a {
+  width: 115px;
+  height: 41px;
+  display: block;
+  background-color: var(--white);
   background-image: url("../img/logo-htmlacademy.svg");
-  background-position: center;
+}
+
+.logo a:hover {
+  background-image: url("../img/logo-htmlacademy_hover.svg");
+}
+
+.logo a:active {
+  background-image: url("../img/logo-htmlacademy_button.svg");
+}
+
+logo a:focus {
+  background-image: url("../img/logo-htmlacademy_hover.svg");
 }
 
 /* hotels.html */
 
-.amara {
+.amara-resort-spa {
   font-size: 14px;
   line-height: 21px;
   background-color: var(--white);
 }
 
-.amara h2 {
+.amara-resort-spa h2 {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
 }
 
-.amara h2:hover {
+.amara-resort-spa h2:hover {
   color: var(--blue);
 }
 
-.amara h2:active {
+.amara-resort-spa h2:active {
   color: var(--special-black)
+}
+
+.amara-resort-spa p {
+  margin: 0;
 }
 
 .more {
@@ -296,17 +373,17 @@ h1 {
   background-color: var(--find-button);
 }
 
-.reserv {
+.features {
   color: var(--white);
   text-align: center;
   background-color: var(--ligth-brown);
 }
 
-.reserv:hover {
+.features:hover {
   background-color: var(--brown);
 }
 
-.reserv:active {
+.features:active {
   color: var(--special-white);
   background-color: var(--dark-brown);
 }
@@ -316,29 +393,36 @@ h1 {
   background-color: var(--date);
 }
 
-.desert {
+.desert-quail-inn {
   font-size: 14px;
   line-height: 21px;
   background-color: var(--white);
 }
 
-.desert h2 {
+.desert-quail-inn h2 {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
 }
 
-.villas {
+.desert-quail-inn p {
+  margin: 0;
+}
+
+.villas-at-poco-diablo {
   font-size: 14px;
   line-height: 21px;
   background-color: var(--white);
 }
 
-.villas h2 {
+.villas-at-poco-diablo h2 {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
 }
 
+.villas-at-poco-diablo p {
+  margin: 0;
+}
 
 
