@@ -27,9 +27,9 @@
 @font-face {
   font-family: "PT sans";
   src: url("../fonts/ptsans.woff2") format("woff2");
-  src: url("../fonts/ptsansbold.woff2") format("woff2");
-  src: url("../fonts/ptsans.woff") format("woff");
-  src: url("../fonts/ptsansbold.woff") format("woff");
+       url("../fonts/ptsans.woff") format("woff");
+       url("../fonts/ptsansbold.woff2") format("woff2");
+       url("../fonts/ptsansbold.woff") format("woff");
 }
 
 body {
@@ -81,6 +81,15 @@ img {
 .main-nav a {
   line-height: 26px;
   color: var(--black);
+}
+
+.main-nav a:hover {
+  color: var(--blue);
+  border: ;
+}
+
+.main-nav a:active {
+  color: var(--special-black);
 }
 /* index.html */
 
