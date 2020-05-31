@@ -12,11 +12,11 @@
       <a>
         <img src="img/logo_sedona.svg" width="138" height="70" alt="Логотип город Седона">
       </a>
-      <ul>
-        <li><a href="">Информация</a></li>
-        <li><a href="">Фото и видео</a></li>
-        <li><a href="">Карта штата</a></li>
-        <li><a href="hotels.html">Гостиницы</a></li>
+      <ul class="main-nav-list">
+        <li><a class="main-nav-item" href="">Информация</a></li>
+        <li><a class="main-nav-item" href="">Фото и видео</a></li>
+        <li><a class="main-nav-item" href="">Карта штата</a></li>
+        <li><a class="main-nav-item" href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -29,7 +29,7 @@
           Седона - небольшой городок в аризоне,
           заслуживающий большего
       </h1>
-      <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+      <p class="text">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
     </section>
     <section>
       <h2 class="visually-hidden">Преимущества</h2>
@@ -86,33 +86,33 @@
     <section class="search-hotel-block">
       <h2 class="visually-hidden">Лучшие предложения</h2>
       <p class="subtitle">Заинтересовались?</p>
-      <p class="best-offers">
+      <p class="form-description">
         Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
       <article class="search-hotel-content">
         <button class="search-hotel">Поиск гостиницы в седоне</button>
         <form class="date">
-          <label for="arrival_date">Дата заезда:</label>
+          <label class="desc" for="arrival_date">Дата заезда:</label>
           <div>
-            <input class="prompt" name="arrival" type="text" id="arrival_date" placeholder="24 апреля 2017">
+            <input class="hotel-input" name="arrival" type="text" id="arrival_date" placeholder="24 апреля 2017">
             <button class="button" type="button">календарь</button>
           </div>
-          <label for="date_departure">Дата выезда:</label>
+          <label class="desc" for="date_departure">Дата выезда:</label>
           <div>
-            <input class="prompt" name="departure" type="text" id="date_departure" placeholder="4 июля 2017">
+            <input class="hotel-input" name="departure" type="text" id="date_departure" placeholder="4 июля 2017">
             <button class="button" type="button">календарь</button>
           </div>
-          <label for="old">Взрослые</label>
+          <label class="desc" for="old">Взрослые</label>
           <div>
             <button class="button" type="button">-</button>
-            <input class="prompt" name="old" type="text" id="old" inputmode="numeric" placeholder="2">
+            <input class="hotel-input" name="old" type="text" id="old" inputmode="numeric" placeholder="2">
             <button class="button" type="button">+</button>
           </div>
-          <label for="child">Дети</label>
+          <label class="desc" for="child">Дети</label>
           <div>
             <button class="button" type="button">-</button>
-            <input class="prompt" name="child" type="text" id="child" inputmode="numeric" placeholder="0">
+            <input class="hotel-input" name="child" type="text" id="child" inputmode="numeric" placeholder="0">
             <button class="button" type="button">+</button>
           </div>
           <button class="submit" type="submit">Найти</button>
@@ -124,22 +124,22 @@
   <footer>
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <p>
+      <p class="contacts-content">
         #visitsedona<br>
-        <a href="tel:+7(495)6660266">Тел: +7(495) 666-02-66</a>
+        <a class="contacts-phone" href="tel:+7(495)6660266">Тел: +7(495) 666-02-66</a>
       </p>
     </section>
     <section class="social">
       <h2 class="visually-hidden">Социальные сети</h2>
-      <ul>
-        <li class="twitter" aria-label="twitter"><a href=""></a></li>
-        <li class="facebook" aria-label="facebook"><a href=""></a></li>
-        <li class="youtube" aria-label="youtube"><a href=""></a></li>
+      <ul class="social-list">
+        <li class="social-list-item"><a class="link-twitter" href="" aria-label="twitter"></a></li>
+        <li class="social-list-item"><a class="link-facebook" href="" aria-label="facebook"></a></li>
+        <li class="social-list-item"><a class="link-youtube" href="" aria-label="youtube"></a></li>
       </ul>
     </section>
-    <p class="logo">
+    <p class="authors">
       Website by
-      <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="html-academy"></a>
+      <a class="authors-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="html-academy"></a>
     </p>
   </footer>
   </body>
