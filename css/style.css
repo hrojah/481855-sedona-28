@@ -467,6 +467,14 @@ img {
   line-height: 26px;
 }
 
+.desert-quail-inn h2:hover {
+  color: var(--blue);
+}
+
+.desert-quail-inn h2:active {
+  color: var(--special-black)
+}
+
 .desert-quail-inn p {
   margin: 0;
 }
@@ -481,6 +489,14 @@ img {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
+}
+
+.villas-at-poco-diablo h2:hover {
+  color: var(--blue);
+}
+
+.villas-at-poco-diablo h2:active {
+  color: var(--special-black)
 }
 
 .villas-at-poco-diablo p {
