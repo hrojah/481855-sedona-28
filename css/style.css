@@ -483,6 +483,12 @@ img {
   border:none;
 }
 
+.type-hotel-submit:focus {
+  color: var(--black);
+  background-color: var(--white);
+  border:none;
+}
+
 .results-search {
   font-size: 12px;
   line-height: 18px;
@@ -510,6 +516,11 @@ img {
   border-bottom: none;
 }
 
+.results-link:focus {
+  color: var(--blue);
+  border-bottom: 1px dotted var(--blue);
+}
+
 .results-filter {
   color: var(--icon-up);
 }
@@ -520,6 +531,10 @@ img {
 
 .results-filter:active {
   color: var(--blue);
+}
+
+.results-filter:focus {
+  color: var(--black);
 }
 
 .cards-hotel {
