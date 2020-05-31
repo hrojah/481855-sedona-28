@@ -256,6 +256,11 @@ img {
   text-decoration: none;
 }
 
+.contacts a:hover {
+  color: var(--blue);
+  outline: none;
+}
+
 .contacts a:focus{
   color : var(--blue);
   outline: none;
@@ -365,7 +370,7 @@ img {
 .logo a {
   width: 115px;
   height: 41px;
-  display: block;
+  display: inline-block;
   background-color: var(--white);
   background-image: url("../img/logo-htmlacademy.svg");
 }
