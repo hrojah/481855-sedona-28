@@ -579,6 +579,11 @@ img {
   cursor: default;
 }
 
+.results-filter-active:active {
+  color: var(--blue);
+  cursor: default;
+}
+
 .cards-hotel {
   font-size: 14px;
   line-height: 21px;
