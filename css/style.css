@@ -97,6 +97,22 @@ img {
   color: var(--blue);
   outline: none;
 }
+
+.main-nav-item-active {
+  color: var(--ligth-brown);
+  cursor: default;
+}
+
+.main-nav-item-active:hover {
+  color: var(--ligth-brown);
+  cursor: default;
+}
+
+.main-nav-item-active:active {
+  color: var(--ligth-brown);
+  cursor: default;
+}
+
 /* index.html */
 
 .slogan {
@@ -521,6 +537,22 @@ img {
   border-bottom: 1px dotted var(--blue);
 }
 
+.results-link-active {
+  color: var(--blue);
+  border-bottom: none;
+  cursor: default;
+}
+
+.results-link-active:hover {
+  color: var(--blue);
+  cursor: default;
+}
+
+.results-link-active:active {
+  color: var(--blue);
+  cursor: default;
+}
+
 .results-filter {
   color: var(--icon-up);
 }
@@ -535,6 +567,16 @@ img {
 
 .results-filter:focus {
   color: var(--black);
+}
+
+.results-filter-active {
+  color: var(--blue);
+  cursor: default;
+}
+
+.results-filter-active:hover {
+  color: var(--blue);
+  cursor: default;
 }
 
 .cards-hotel {
