@@ -464,6 +464,7 @@ img {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
+  margin-top: 0;
 }
 
 .sort-link {
