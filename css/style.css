@@ -135,7 +135,7 @@ img {
   line-height: 26px;
 }
 
-.box {
+.features {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -153,14 +153,7 @@ img {
   margin: 0;
 }
 
-.advantage-box {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
-  background-color: var(--white);
-}
-
-.advantage-box-list {
+.advantage-list {
   list-style: none;
   margin: 0;
 }
@@ -190,7 +183,7 @@ img {
   margin: 0;
 }
 
-.advantage-box-2 {
+.features-grey {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -369,17 +362,8 @@ img {
   background-repeat: no-repeat;
 }
 
-.link-twitter:hover {
-  background-color: var(--find-hover);
-}
-
 .link-twitter:active {
   background-image: url("../img/twitter_button.svg");
-}
-
-.link-twitter:focus {
-  background-color: var(--find-hover);
-  outline: none;
 }
 
 .link-facebook {
@@ -391,17 +375,8 @@ img {
   background-repeat: no-repeat;
 }
 
-.link-facebook:hover {
-  background-color: var(--find-hover);
-}
-
 .link-facebook:active {
   background-image: url("../img/fb_button.svg");
-}
-
-.link-facebook:focus {
-  background-color: var(--find-hover);
-  outline: none;
 }
 
 .link-youtube {
@@ -413,15 +388,15 @@ img {
   background-repeat: no-repeat;
 }
 
-.link-youtube:hover {
-  background-color: var(--find-hover);
-}
-
 .link-youtube:active {
   background-image: url("../img/youtube_button.svg");
 }
 
-.link-youtube:focus {
+.social-link:hover {
+  background-color: var(--find-hover);
+}
+
+.social-link:focus {
   background-color: var(--find-hover);
   outline: none;
 }
@@ -517,38 +492,39 @@ img {
   line-height: 26px;
 }
 
-.results-link {
+.sort-link {
   color: var(--special-black);
   border-bottom: 1px dotted var(--blue);
 }
 
-.results-link:hover {
+.sort-link:hover {
   color: var(--blue);
   border-bottom: 1px dotted var(--blue);
 }
 
-.results-link:active {
+.sort-link:active {
   color: var(--black);
-  border-bottom: none;
+  border: none;
 }
 
-.results-link:focus {
+.sort-link:focus {
   color: var(--blue);
   border-bottom: 1px dotted var(--blue);
+  outline: none;
 }
 
-.results-link-active {
+.sort-link-active {
   color: var(--blue);
   border-bottom: none;
   cursor: default;
 }
 
-.results-link-active:hover {
+.sort-link-active:hover {
   color: var(--blue);
   cursor: default;
 }
 
-.results-link-active:active {
+.sort-link-active:active {
   color: var(--blue);
   cursor: default;
 }
@@ -628,22 +604,22 @@ img {
   outline: none;
 }
 
-.reserv-link {
+.reserve-link {
   color: var(--white);
   text-align: center;
   background-color: var(--ligth-brown);
 }
 
-.reserv-link:hover {
+.reserve-link:hover {
   background-color: var(--brown);
 }
 
-.reserv-link:active {
+.reserve-link:active {
   color: var(--special-white);
   background-color: var(--dark-brown);
 }
 
-.reserv-link:focus {
+.reserve-link:focus {
   background-color: var(--brown);
   outline: none;
 }
