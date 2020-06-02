@@ -84,18 +84,15 @@ img {
   color: var(--black);
 }
 
-.main-nav-item:hover {
+.main-nav-item:hover,
+.main-nav-item:focus {
   color: var(--blue);
+  outline: none;
 
 }
 
 .main-nav-item:active {
   color: var(--special-black);
-}
-
-.main-nav-item:focus {
-  color: var(--blue);
-  outline: none;
 }
 
 .main-nav-item-active {
@@ -225,18 +222,15 @@ img {
   border: none;
 }
 
-.search-hotel:hover {
+.search-hotel:hover,
+.search-hotel:focus {
   background-color: var(--brown);
+  outline: none;
 }
 
 .search-hotel:active {
   color: var(--special-white);
   background-color: var(--dark-brown);
-}
-
-.search-hotel:focus {
-  background-color: var(--brown);
-  outline: none;
 }
 
 .desc {
@@ -270,17 +264,14 @@ img {
   border: none;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   color: var(--black);
+  outline: none;
 }
 
 .button:active {
   color: var(--blue);
-}
-
-.button:focus {
-  color: var(--black);
-  outline: none;
 }
 
 .submit {
@@ -296,18 +287,15 @@ img {
   text-align: center;
 }
 
-.submit:hover {
+.submit:hover,
+.submit:focus {
   background-color: var(--find-hover);
+  outline: none;
 }
 
 .submit:active {
   color: var(--special-white);
   background-color: var(--find-button);
-  outline: none;
-}
-
-.submit:focus {
-  background-color: var(--find-hover);
   outline: none;
 }
 
@@ -325,13 +313,9 @@ img {
   text-decoration: none;
 }
 
-.contacts-phone:hover {
+.contacts-phone:hover,
+.contacts-phone:focus {
   color: var(--blue);
-  outline: none;
-}
-
-.contacts-phone:focus{
-  color : var(--blue);
   outline: none;
 }
 
@@ -392,10 +376,7 @@ img {
   background-image: url("../img/youtube_button.svg");
 }
 
-.social-link:hover {
-  background-color: var(--find-hover);
-}
-
+.social-link:hover,
 .social-link:focus {
   background-color: var(--find-hover);
   outline: none;
@@ -416,15 +397,12 @@ img {
   background-image: url("../img/logo-htmlacademy.svg");
 }
 
-.authors-logo:hover {
-
-}
-
-.authors-logo:active {
+.authors-logo:hover,
+.authors-logo:focus{
   outline: none;
 }
 
-.authors-logo:focus {
+.authors-logo:active {
   outline: none;
 }
 
@@ -468,16 +446,12 @@ img {
   background-color: transparent;
 }
 
-.type-hotel-submit:hover {
-  color: var(--black);
-  background-color: var(--white);
-  border:none;
-}
-
+.type-hotel-submit:hover,
 .type-hotel-submit:focus {
   color: var(--black);
   background-color: var(--white);
-  border:none;
+  border: none;
+  outline: none;
 }
 
 .results-search {
@@ -497,20 +471,16 @@ img {
   border-bottom: 1px dotted var(--blue);
 }
 
-.sort-link:hover {
+.sort-link:hover,
+.sort-link:focus {
   color: var(--blue);
   border-bottom: 1px dotted var(--blue);
+  outline: none;
 }
 
 .sort-link:active {
   color: var(--black);
   border: none;
-}
-
-.sort-link:focus {
-  color: var(--blue);
-  border-bottom: 1px dotted var(--blue);
-  outline: none;
 }
 
 .sort-link-active {
@@ -533,16 +503,14 @@ img {
   color: var(--icon-up);
 }
 
-.results-filter:hover {
+.results-filter:hover,
+.results-filter:focus {
   color: var(--black);
+  outline: none;
 }
 
 .results-filter:active {
   color: var(--blue);
-}
-
-.results-filter:focus {
-  color: var(--black);
 }
 
 .results-filter-active {
@@ -550,11 +518,7 @@ img {
   cursor: default;
 }
 
-.results-filter-active:hover {
-  color: var(--blue);
-  cursor: default;
-}
-
+.results-filter-active:hover,
 .results-filter-active:active {
   color: var(--blue);
   cursor: default;
@@ -590,18 +554,15 @@ img {
   background-color: var(--blue);
 }
 
-.more:hover {
+.more:hover,
+.more:focus {
   background-color: var(--find-hover);
+  outline: none;
 }
 
 .more:active {
   color: var(--special-white);
   background-color: var(--find-button);
-}
-
-.more:focus {
-  background-color: var(--find-hover);
-  outline: none;
 }
 
 .reserve-link {
@@ -610,18 +571,15 @@ img {
   background-color: var(--ligth-brown);
 }
 
-.reserve-link:hover {
+.reserve-link:hover,
+.reserve-link:focus {
   background-color: var(--brown);
+  outline: none;
 }
 
 .reserve-link:active {
   color: var(--special-white);
   background-color: var(--dark-brown);
-}
-
-.reserve-link:focus {
-  background-color: var(--brown);
-  outline: none;
 }
 
 .rating {
