@@ -54,12 +54,19 @@ img {
   height: auto;
 }
 
-.subject {
-  margin: 0 auto;
-  width: 470px;
-  font-size: 21px;
-  line-height: 26px;
-  text-align: center;
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-width: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 .visually-hidden {
@@ -70,13 +77,30 @@ img {
   margin: -1px;
 }
 
+.header {
+  margin: 0 auto;
+}
+
 .main-nav {
+  display: flex;
+  position: relative;
   background-color: var(--white);
 }
 
+.main-nav .logo-sedona {
+  position: absolute;
+  left: 531px;
+}
+
 .main-nav-list {
-  list-style: none;
+  width: 1200px;
+  height: 55px;
   margin: 0;
+  padding: 0 72px 0 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none
 }
 
 .main-nav-item {
@@ -121,13 +145,26 @@ img {
   text-align: center;
 }
 
+.slogan img {
+  padding-top: 77px;
+}
+
 .main {
   background-color: var(--white);
   text-align: center;
 }
 
+.subject {
+  margin: 42px auto 16px;
+  width: 470px;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
 .text {
   margin: 0;
+  padding-bottom: 51px;
   font-size: 14px;
   line-height: 26px;
 }
@@ -196,6 +233,7 @@ img {
 .form-description {
   margin: 0;
   font-size: 14px;
+  padding-bottom: 50px;
   font-weight: normal;
   color: var(--light-black);
   background-color: var(--white);
@@ -203,6 +241,8 @@ img {
 
 .subtitle {
   margin: 0;
+  padding-top: 58px;
+  padding-bottom: 40px;
   font-size: 30px;
   font-weight: bold;
   background-color: var(--white);
@@ -301,15 +341,22 @@ img {
   outline: none;
 }
 
-.contacts-content {
-  margin: 0;
-  font-size: 26px;
-  font-weight: bold;
-  line-height: 21px;
+.footer {
+  width: 1200px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
   background-color: var(--white);
 }
 
+.contacts-content {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 21px;
+}
+
 .contacts-phone {
+  margin-top: 20px;
   display: block;
   color: var(--black);
   text-decoration: none;
@@ -323,11 +370,14 @@ img {
 
 .social {
   margin: 0;
-  background-color: var(--white);
 }
 
 .social-list {
+  height: 100%;
+  display: flex;
+  align-items: center;
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -385,15 +435,18 @@ img {
 }
 
 .authors {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   margin: 0;
   font-size: 14px;
   line-height: 26px;
-  background-color: var(--white);
 }
 
 .authors-logo {
   width: 115px;
   height: 41px;
+  padding-right: 101px;
   display: inline-block;
   background-color: var(--white);
   background-image: url("../img/logo-htmlacademy.svg");
