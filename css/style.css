@@ -583,13 +583,29 @@ img {
 .cards-hotel {
   font-size: 14px;
   line-height: 21px;
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  grid-template-rows: min-content 1fr min-content;
   background-color: var(--white);
+}
+
+.image {
+  width: 135px;
+  height: 90px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
 }
 
 .caption {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 .caption:hover {
@@ -604,9 +620,20 @@ img {
   margin: 0;
 }
 
+.price {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
 .more {
   color: var(--white);
   text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
   background-color: var(--blue);
 }
 
@@ -624,6 +651,10 @@ img {
 .reserve-link {
   color: var(--white);
   text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
   background-color: var(--ligth-brown);
 }
 
@@ -638,7 +669,18 @@ img {
   background-color: var(--dark-brown);
 }
 
+.star {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
 .rating {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
   color: var(--rating);
   background-color: var(--date);
 }
