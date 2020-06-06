@@ -393,7 +393,7 @@ img {
 .footer {
   min-height: 120px;
   display: flex;
-  padding: 0 101px 0 118px;
+  padding: 0 101px 0 117px;
   justify-content: space-between;
   background-color: var(--white);
 }
