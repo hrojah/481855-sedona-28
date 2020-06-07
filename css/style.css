@@ -426,14 +426,14 @@ img {
 }
 
 .social {
-  margin: 0;
+  margin: 0 82px 0 0;
 }
 
 .social-list {
   height: 100%;
   display: flex;
+  margin: 0;
   align-items: center;
-  margin: 0 82px 0 0;
   padding: 0;
   list-style: none;
 }
