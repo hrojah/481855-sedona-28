@@ -14,8 +14,8 @@
       </a>
       <ul class="main-nav-list">
         <li class="main-nav-item"><a class="main-nav-link" href="">Информация</a></li>
-        <li class="main-nav-item"><a class="main-nav-link foto" href="">Фото и видео</a></li>
-        <li class="main-nav-item"><a class="main-nav-link" href="">Карта штата</a></li>
+        <li class="main-nav-item"><a class="main-nav-link link-foto" href="">Фото и видео</a></li>
+        <li class="main-nav-item"><a class="main-nav-link link-map" href="">Карта штата</a></li>
         <li class="main-nav-item"><a class="main-nav-link">Гостиницы</a></li>
       </ul>
     </nav>
@@ -23,11 +23,11 @@
   <main class="wrapper">
     <section>
       <h1 class="visually-hidden">Поиск отеля</h1>
-      <section class="section">
+      <section>
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <form class="filter-hotel" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="filter">
-            <legend class="filter-title filter-control">Инфраструктура:</legend>
+          <fieldset class="filter filter-control">
+            <legend class="filter-title legend">Инфраструктура:</legend>
             <ul class="type-hotel-list">
               <li class="type-hotel-item">
                 <input class="type-hotel-input" type="checkbox" id="pool" name="pool" checked>
@@ -44,7 +44,7 @@
             </ul>
           </fieldset>
           <fieldset class="filter">
-            <legend class="filter-title">Тип жилья:</legend>
+            <legend class="filter-title legend">Тип жилья:</legend>
             <ul class="type-hotel-list">
               <li class="type-hotel-list-item">
                 <input class="type-hotel-input" type="checkbox" id="hotel" name="hotel" checked>
@@ -77,13 +77,15 @@
         <a class="sort-link price" href="">По цене</a>
         <a class="sort-link type" href="">По типу</a>
         <a class="sort-link" href="">По рейтингу</a>
-        <a class="results-filter results-control" href="" aria-label="по возрастанию">&#x25B2;</a>
-        <a class="results-filter" href="" aria-label="по убыванию">&#x25BC;</a>
+        <div class="results-filter-control">
+          <a class="results-filter results-control-ascending" href="" aria-label="по возрастанию">&#x25B2;</a>
+          <a class="results-filter" href="" aria-label="по убыванию">&#x25BC;</a>
+        </div>
       </section>
     </section>
     <article class="cards-hotel">
       <img class="image" src="img/hotel1.jpg" width="135" height="90" alt="фото гостиницы Amara resort & spa">
-      <div>
+      <div class="hotel-text">
         <h2 class="caption">Amara resort & spa</h2>
         <p class="cards-text">Гостиница от 4000 р.</p>
         <a class="more" href="">Подробнее</a>
@@ -96,7 +98,7 @@
     </article>
     <article class="cards-hotel">
       <img class="image" src="img/hotel2.jpg" width="135" height="90" alt="фото гостиницы Desert quail inn">
-      <div>
+      <div class="hotel-text">
         <h2  class="caption">Desert quail inn</h2>
         <p class="cards-text price">Мотель от 3000 р.</p>
         <a class="more" href="">Подробнее</a>
@@ -109,7 +111,7 @@
     </article>
     <article class="cards-hotel">
       <img class="image" src="img/hotel3.jpg" width="135" height="90" alt="фото гостиницы Villas at poco diablo">
-      <div>
+      <div class="hotel-text">
       <h2 class="caption">Villas at poco diablo</h2>
       <p class="cards-text price">Аппартаменты от 2000 р.</p>
       <a class="more" href="">Подробнее</a>

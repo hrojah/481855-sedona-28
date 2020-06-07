@@ -87,9 +87,10 @@ img {
   background-color: var(--white);
 }
 
-.main-nav .logo-sedona {
+.logo-sedona {
   position: absolute;
   left: 50%;
+  top: 0;
   transform: translate(-50%, 0);
 }
 
@@ -137,8 +138,12 @@ img {
   cursor: default;
 }
 
-.foto {
-  margin-right: 250px;
+.link-foto {
+  margin-right: 125px;
+}
+
+.link-map {
+  margin-left: 125px;
 }
 
 /* index.html */
@@ -152,7 +157,7 @@ img {
   text-align: center;
 }
 
-.slogan img {
+.welcome {
   padding-top: 77px;
 }
 
@@ -177,7 +182,6 @@ img {
 }
 
 .features-box {
-  min-width: 1200px;
   display: flex;
 }
 
@@ -203,7 +207,7 @@ img {
   padding-top: 47px;
 }
 
-.control-box-title {
+.box-subtitle-control {
   padding-top: 50px;
 }
 
@@ -391,15 +395,15 @@ img {
 }
 
 .footer {
+  padding: 0 101px 0 117px;
   min-height: 120px;
   display: flex;
-  padding: 0 101px 0 117px;
   justify-content: space-between;
   background-color: var(--white);
 }
 
 .contacts {
-  max-width: 270px;
+  max-width: 300px;
 }
 
 .contacts-content {
@@ -429,14 +433,12 @@ img {
   height: 100%;
   display: flex;
   align-items: center;
-  margin: 0;
+  margin: 0 82px 0 0;
   padding: 0;
   list-style: none;
 }
 
 .social-list-item {
-  width: 46px;
-  height: 48px;
   margin: 0 3px;
   background-color: var(--blue);
   background-position: center;
@@ -525,6 +527,7 @@ img {
 }
 
 .filter-hotel {
+  max-height: 217px;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -544,7 +547,11 @@ img {
 
 .filter-control {
   padding-left: 72px;
-  padding-right: 119px;
+  padding-right: 25px;
+}
+
+.legend {
+  padding-bottom: 25px;
 }
 
 .control-filter {
@@ -563,7 +570,6 @@ img {
 }
 
 .type-hotel-item {
-  padding-left: 72px;
   padding-right: 119px;
   padding-bottom: 23px;
 }
@@ -685,13 +691,18 @@ img {
   cursor: default;
 }
 
-.results-control {
-  margin-left: 503px;
+.results-filter-control {
+  margin-left: auto;
+  padding-right: 73px;
+}
+
+.results-control-ascending {
   margin-right: 12px;
 }
 
 .cards-hotel {
   padding-left: 73px;
+  padding-right: 73px;
   font-size: 14px;
   line-height: 21px;
   min-height: 150px;
@@ -727,13 +738,12 @@ img {
   padding-bottom: 16px;
 }
 
-.cards-hotel div {
+.hotel-text {
   padding-left :29px;
 }
 
 .cards-text-control {
   margin-left: auto;
-  padding-right: 73px;
   padding-top: 29px;
   display: flex;
   flex-direction: column;
@@ -741,6 +751,7 @@ img {
 }
 
 .more {
+  padding: 3px 17px;
   color: var(--white);
   text-align: center;
   background-color: var(--blue);
@@ -758,6 +769,7 @@ img {
 }
 
 .reserve-link {
+  padding: 3px 17px;
   color: var(--white);
   text-align: center;
   background-color: var(--ligth-brown);
