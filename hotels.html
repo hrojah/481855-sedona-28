@@ -9,19 +9,20 @@
   <body class="page-body">
   <header class="header wrapper">
     <nav class="main-nav">
-      <a href="index.html" class="logo-sedona">
-        <img src="img/logo_sedona.svg" width="138" height="70" alt="Логотип город Седона">
-      </a>
       <ul class="main-nav-list">
         <li class="main-nav-item"><a class="main-nav-link" href="">Информация</a></li>
-        <li class="main-nav-item"><a class="main-nav-link link-foto" href="">Фото и видео</a></li>
-        <li class="main-nav-item"><a class="main-nav-link link-map" href="">Карта штата</a></li>
-        <li class="main-nav-item"><a class="main-nav-link">Гостиницы</a></li>
+        <li class="main-nav-item"><a class="main-nav-link" href="">Фото и видео</a></li>
+        <li>
+          <a href="index.html" class="logo-sedona">
+            <img src="img/logo_sedona.svg" width="138" height="70" alt="Логотип город Седона">
+          </a>
+        </li>
+        <li class="main-nav-item"><a class="main-nav-link main-nav-link-right" href="">Карта штата</a></li>
+        <li class="main-nav-item"><a class="main-nav-link main-nav-link-right">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
   <main class="wrapper">
-    <section>
       <h1 class="visually-hidden">Поиск отеля</h1>
       <section>
         <h2 class="visually-hidden">Поиск гостиницы</h2>
@@ -46,21 +47,21 @@
           <fieldset class="filter">
             <legend class="filter-title legend">Тип жилья:</legend>
             <ul class="type-hotel-list">
-              <li class="type-hotel-list-item">
+              <li class="type-hotel-item">
                 <input class="type-hotel-input" type="checkbox" id="hotel" name="hotel" checked>
                 <label for="hotel">Гостиница</label>
               </li>
-              <li class="type-hotel-list-item">
+              <li class="type-hotel-item">
                 <input class="type-hotel-input" type="checkbox" id="motel" name="motel" checked>
                 <label for="motel">Мотель</label>
               </li>
-              <li class="type-hotel-list-item">
+              <li class="type-hotel-item">
                 <input class="type-hotel-input" type="checkbox" id="apartments" name="apartments" checked>
                 <label for="apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
-          <div class="filter control-filter">
+          <div class="filter filter-range">
             <h3 class="filter-title">Стоимость в сутки (р)</h3>
             <div class="cost">
               <span>От 0</span>
@@ -69,7 +70,6 @@
             <button class="type-hotel-submit" type="submit">Показать</button>
           </div>
         </form>
-      </section>
       <section class="results-search">
         <h2 class="visually-hidden">Результаты поиска гостиниц</h2>
         <p class="results-search-title">Найдено: 3</p>
