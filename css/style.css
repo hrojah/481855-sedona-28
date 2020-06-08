@@ -89,11 +89,12 @@ img {
 
 .logo-sedona {
   width: 138px;
+  height: 70px;
   order: 1;
 }
 
 .main-nav-list {
-  min-height: 55px;
+  max-height: 55px;
   margin: 0;
   padding: 0 67px;
   display: flex;
@@ -104,19 +105,19 @@ img {
 
 .main-nav-item {
   width: 227px;
+  text-align: left;
 }
 
 .main-nav-link {
   display: block;
-  padding: 5px 15px;
   line-height: 26px;
   font-weight: bold;
-  text-align: left;
   color: var(--black);
 }
 
-.main-nav-link-right {
+.main-nav-item-right {
   text-align: right;
+  order: 2
 }
 
 .main-nav-link:hover,
