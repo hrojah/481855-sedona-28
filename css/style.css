@@ -415,7 +415,7 @@ img {
   color: var(--blue);
 }
 
-.arrival_date .button {
+.arrival-date .button {
   width: 21px;
   height: 23px;
   top: 62px;
@@ -423,7 +423,7 @@ img {
   position: absolute;
 }
 
-.departure_date .button {
+.departure-date .button {
   width: 21px;
   height: 23px;
   top: 129px;
