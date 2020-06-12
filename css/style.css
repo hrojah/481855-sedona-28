@@ -643,6 +643,10 @@ img {
   cursor: pointer;
 }
 
+.toggle:hover {
+  border: 9px solid var(--white);
+}
+
 .toggle-max {
   left: 234px;
 }
