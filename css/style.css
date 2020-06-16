@@ -392,6 +392,7 @@ img {
   color: var(--icon-form);
   border: none;
   cursor: pointer;
+  background-color: var(--date);
 }
 
 .search-hotel-button path {
