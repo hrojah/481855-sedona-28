@@ -82,23 +82,25 @@ img {
   margin: 0 auto;
 }
 
-.main-nav {
+.header {
   position: relative;
+}
+
+.main-nav {
   background-color: var(--white);
 }
 
 .logo-sedona {
+  position: absolute;
+  left: 50%;
+  transform: translate(-69px, 0);
   width: 138px;
   height: 70px;
   order: 1;
 }
 
-.logo-sedona-link {
-  outline: none;
-}
-
 .main-nav-list {
-  max-height: 55px;
+  height: 55px;
   margin: 0;
   padding: 0 67px;
   display: flex;
@@ -121,7 +123,6 @@ img {
 
 .main-nav-item-right {
   text-align: right;
-  order: 2
 }
 
 .main-nav-link:hover,
@@ -336,8 +337,7 @@ img {
   width: 568px;
   left: 50%;
   transform: translate(-284px, 0);
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding: 55px 0;
   background-color: var(--white);
 }
 
@@ -345,6 +345,10 @@ img {
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
+}
+
+.desc-range {
+  margin-left: 53px;
 }
 
 .arrival-date .hotel-input {
@@ -356,6 +360,7 @@ img {
 }
 
 .hotel-input {
+  padding: 0;
   height: 38px;
   background-color: var(--date);
   border: none;
@@ -402,6 +407,16 @@ img {
   fill: var(--blue);
 }
 
+.search-hotel-button:hover rect,
+.search-hotel-button:focus rect {
+  fill: var(--black);
+}
+
+.search-hotel-button:active rect {
+  fill: var(--blue);
+}
+
+.search-hotel-button:active
 .search-hotel-button:hover,
 .search-hotel-button:focus {
   color: var(--black);
@@ -410,6 +425,15 @@ img {
 
 .search-hotel-button:active {
   color: var(--blue);
+}
+
+.search-hotel-button-range {
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.people .hotel-input {
+  width: 76px;
 }
 
 .arrival-date {
@@ -422,7 +446,6 @@ img {
 
 .arrival-date .search-hotel-button {
   width: 21px;
-  height: 38px;
   margin-right: 9px;
   top: 0;
   right: 62px;
@@ -431,11 +454,21 @@ img {
 
 .departure-date .search-hotel-button {
   width: 21px;
-  height: 38px;
   margin-right: 9px;
   top: 30px;
   right: 62px;
   position: absolute;
+}
+
+.search-hotel-button {
+  height: 38px;
+}
+
+.people {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 54px 0;
 }
 
 .submit {
@@ -603,11 +636,24 @@ img {
 }
 
 .price-controls {
+  height: 36px;
   display: flex;
-  justify-content: space-around;
+  padding-left: 66px;
+  justify-content: center;
+  align-items: center;
   border: 2px solid var(--white);
   border-radius: 2px;
 }
+
+.input-price {
+  width: 71px;
+  padding: 0;
+}
+
+.max-price {
+  padding-left: 35px;
+}
+
 
 .filter-range {
   display: flex;
