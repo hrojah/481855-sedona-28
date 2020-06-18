@@ -8,16 +8,14 @@
   </head>
   <body class="page-body">
   <header class="header wrapper">
+    <a class="logo-sedona" href="index.html">
+      <img src="img/logo_sedona.svg" width="138" height="70" alt="Логотип город Седона">
+    </a>
     <nav class="main-nav">
       <ul class="main-nav-list">
-        <li class="logo-sedona">
-          <a class="logo-sedona-link" href="index.html">
-            <img src="img/logo_sedona.svg" width="138" height="70" alt="Логотип город Седона">
-          </a>
-        </li>
         <li class="main-nav-item"><a class="main-nav-link" href="">Информация</a></li>
-        <li class="main-nav-item"><a class="main-nav-link" href="">Фото и видео</a></li>
-        <li class="main-nav-item main-nav-item-right"><a class="main-nav-link" href="">Карта штата</a></li>
+        <li class="main-nav-item main-nav-item-foto"><a class="main-nav-link" href="">Фото и видео</a></li>
+        <li class="main-nav-item main-nav-item-map main-nav-item-right"><a class="main-nav-link" href="">Карта штата</a></li>
         <li class="main-nav-item main-nav-item-right"><a class="main-nav-link">Гостиницы</a></li>
       </ul>
     </nav>
@@ -63,13 +61,13 @@
           </fieldset>
           <fieldset class="filter filter-range">
             <legend class="filter-title legend-control">Стоимость в сутки (Р):</legend>
-            <div class="qwe">
+            <div>
               <div class="price-controls">
-                <label class="min-price">
-                  От <input class="input-price" type="number" name="min-price" value="0">
+                <label class="min-price" for="min-price">
+                  От <input class="input-price" name="min-price" type="text" id="min-price" inputmode="numeric" value="0">
                 </label>
-                <label class="max-price">
-                  До <input class="input-price" type="number" name="max-price" value="3000">
+                <label class="max-price" for="max-price">
+                  До <input class="input-price" name="max-price" type="text" id="max-price" inputmode="numeric" value="3000">
                 </label>
               </div>
               <div class="range-controls">
@@ -87,12 +85,12 @@
         <h2 class="visually-hidden">Результаты поиска гостиниц</h2>
         <p class="results-search-title">Найдено: 3</p>
         <p class="sort">Сортировка:</p>
-        <a class="sort-link price" href="">По цене</a>
+        <a class="sort-link price">По цене</a>
         <a class="sort-link type" href="">По типу</a>
         <a class="sort-link" href="">По рейтингу</a>
         <div class="results-filter-control">
           <a class="results-filter results-control-ascending" href="" aria-label="по возрастанию">&#x25B2;</a>
-          <a class="results-filter" href="" aria-label="по убыванию">&#x25BC;</a>
+          <a class="results-filter" aria-label="по убыванию">&#x25BC;</a>
         </div>
       </section>
     </section>
@@ -140,7 +138,7 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
       <p class="contacts-content">
-        #visitsedona<br>
+        <span class="contacts-text">#visitsedona</span><br>
         <a class="contacts-phone" href="tel:+7(495)6660166">Тел: +7(495) 666-01-66</a>
       </p>
     </section>
