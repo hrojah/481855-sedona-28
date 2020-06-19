@@ -724,14 +724,16 @@ img {
 }
 
 .legend-control {
-  margin-bottom: 11px;
+  margin-left: 2px;
+  margin-bottom: 10px;
+  letter-spacing: -0.1px;
 }
 
 .price-controls {
   height: 36px;
   display: flex;
   margin-bottom: 20px;
-  padding-left: 67px;
+  padding-left: 58px;
   justify-content: center;
   align-items: center;
   border: 2px solid var(--white);
@@ -741,7 +743,7 @@ img {
 .input-price {
   width: 39px;
   padding: 0;
-  margin-right: 36px;
+  margin-right: 41px;
 }
 
 .min-price {
@@ -763,13 +765,14 @@ img {
 }
 
 .scale {
+  padding-left: 1px;
   width: 100%;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
 .bar {
-  width: 239px;
+  width: 261px;
   height: 2px;
   background-color: var(--white);
   opacity: 1;
@@ -778,8 +781,8 @@ img {
 .toggle {
   box-sizing: content-box;
   position: absolute;
+  left: 1px;
   top: -9px;
-  left: 0;
   width: 4px;
   height: 4px;
   padding: 0;
@@ -799,7 +802,7 @@ img {
 }
 
 .toggle-max {
-  left: 234px;
+  left: 253px;
 }
 
 .input-price {
@@ -814,9 +817,9 @@ img {
 }
 
 .type-hotel-submit {
-  margin: 0 auto;
+  margin-left: 85px;
   width: 137px;
-  padding: 8px 0;
+  padding: 6px 0 6px 3px;
 }
 
 .type-hotel-item {
@@ -825,13 +828,13 @@ img {
 }
 
 .type-hotel-list {
-  margin: 0 0 0 19px;
+  margin: 0 0 0 20px;
   padding: 0;
   list-style: none;
 }
 
 .filter-type-hotel-list {
-  margin: 0 0 0 22px;
+  margin: 0 0 0 23px;
   padding: 0;
   list-style: none;
 }
@@ -906,10 +909,11 @@ img {
   font-weight: bold;
   line-height: 26px;
   padding-left: 73px;
-  padding-right: 46px;
+  padding-right: 47px;
 }
 
 .sort {
+  margin-top: 7px;
   padding-right: 40px;
 }
 
@@ -936,11 +940,17 @@ img {
 }
 
 .price {
-  margin-right: 30px;
+  margin-bottom: 3px;
+  margin-right: 33px;
 }
 
 .type {
   margin-right: 33px;
+  margin-bottom: 5px;
+}
+
+.sort-link-rating {
+  margin-bottom: 4px;
 }
 
 .results-filter {
