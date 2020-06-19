@@ -179,7 +179,7 @@ img {
 }
 
 .subject {
-  margin: 44px auto 42px;
+  margin: 43px auto 43px;
   width: 470px;
   font-size: 21px;
   line-height: 26px;
@@ -231,7 +231,13 @@ img {
 
 .feature-description {
   margin: 0 auto;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
+  max-width: 301px;
+}
+
+.feature-grey-description {
+  margin: 0 auto;
+  padding-bottom: 23px;
   max-width: 301px;
 }
 
@@ -275,7 +281,7 @@ img {
   margin: 0 auto;
   font-size: 21px;
   font-weight: bold;
-  padding-bottom: 25px;
+  padding-bottom: 26px;
 }
 
 .advantage-box-text {
@@ -329,6 +335,7 @@ img {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
+  letter-spacing: -0.2px;
   background-color: var(--ligth-brown);
   border: none;
   text-transform: uppercase;
@@ -539,7 +546,7 @@ img {
 
 .people .hotel-input {
   width: 39px;
-  padding-left: 16px;
+  padding-left: 15px;
 }
 
 .hotel-input-child {
@@ -592,10 +599,6 @@ img {
   max-width: 300px;
 }
 
-.contacts-text {
-  margin-left: 8px;
-}
-
 .contacts-content {
   margin-top: 23px;
   font-size: 21px;
@@ -604,6 +607,7 @@ img {
 }
 
 .contacts-phone {
+  letter-spacing: 0.4px;
   margin-top: 9px;
   display: block;
   color: var(--black);
@@ -617,7 +621,7 @@ img {
 }
 
 .social {
-  margin-right: 6px;
+  margin-right: 14px;
   align-self: center;
 }
 
@@ -695,7 +699,7 @@ img {
 .filter-hotel {
   font-size: 14px;
   line-height: 21px;
-  padding: 0 72px 0 72px;
+  padding: 0 74px 0 72px;
   font-weight: normal;
   color: var(--white);
   display: flex;
@@ -821,7 +825,13 @@ img {
 }
 
 .type-hotel-list {
-  margin: 0 0 0 16px;
+  margin: 0 0 0 19px;
+  padding: 0;
+  list-style: none;
+}
+
+.filter-type-hotel-list {
+  margin: 0 0 0 22px;
   padding: 0;
   list-style: none;
 }
@@ -829,7 +839,16 @@ img {
 .type-hotel-input:checked + label::before {
   content: "";
   position: absolute;
-  left: -36px;
+  left: -41px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.filter-type-hotel-input + label::before {
+  content: "";
+  position: absolute;
+  left: -41px;
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
@@ -847,7 +866,7 @@ img {
 .label::before {
   content: "";
   position: absolute;
-  left: -36px;
+  left: -40px;
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox.svg");
