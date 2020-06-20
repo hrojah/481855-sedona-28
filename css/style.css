@@ -43,6 +43,7 @@ body {
   color: var(--black);
   text-transform: uppercase;
   background-color: var(--gray);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 a {
@@ -738,10 +739,11 @@ img {
 }
 
 .price-controls {
+  width: 317px;
   height: 36px;
   display: flex;
   margin-bottom: 20px;
-  padding-left: 58px;
+  padding-left: 61px;
   justify-content: center;
   align-items: center;
   border: 2px solid var(--white);
@@ -749,9 +751,9 @@ img {
 }
 
 .input-price {
-  width: 39px;
+  width: 37px;
   padding: 0;
-  margin-right: 41px;
+  margin-right: 36px;
 }
 
 .min-price {
@@ -759,7 +761,7 @@ img {
 }
 
 .max-price {
-  padding-left: 50px;
+  padding-left: 52px;
 }
 
 .filter-range {
