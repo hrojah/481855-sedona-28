@@ -852,19 +852,14 @@ img {
 .type-hotel-input:checked + label::before {
   content: "";
   position: absolute;
-  left: -42px;
+  left: -41px;
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
 }
 
-.filter-type-hotel-input + label::before {
-  content: "";
-  position: absolute;
-  left: -41px;
-  width: 27px;
-  height: 23px;
-  background-image: url("../img/checkbox-on.svg");
+.type-hotel-input:focus +label::before {
+  outline: 2px solid var(--black);
 }
 
 .type-hotel-input:disabled {
