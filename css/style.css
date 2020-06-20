@@ -434,12 +434,19 @@ img {
 }
 
 .calendar {
-  /*height: 38px;*/
+  position: relative;
+  height: 38px;
   padding: 0;
   color: var(--icon-form);
   border: none;
   cursor: pointer;
   background-color: var(--date);
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 7px;
+  top: 9px;
 }
 
 .calendar:hover,
@@ -525,14 +532,14 @@ img {
 
 .arrival-date .calendar {
   width: 36px;
-  top: 8px;
+  top: 0;
   right: 2px;
   position: absolute;
 }
 
 .departure-date .calendar {
   width: 36px;
-  top: 38px;
+  top: 30px;
   right: 2px;
   position: absolute;
 }
@@ -583,6 +590,7 @@ img {
 }
 
 .footer {
+  margin-top: 5px;
   padding: 0 138px 0 125px;
   min-height: 120px;
   display: flex;
@@ -591,7 +599,7 @@ img {
 }
 
 .index-footer {
-  transform: translate(0, -120px);
+  transform: translate(0, -125px);
 }
 
 .contacts {
@@ -842,7 +850,7 @@ img {
 .type-hotel-input:checked + label::before {
   content: "";
   position: absolute;
-  left: -41px;
+  left: -42px;
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
@@ -953,8 +961,13 @@ img {
   margin-bottom: 4px;
 }
 
-.results-filter {
-  color: var(--icon-up);
+.results-filter:focus {
+  outline: none;
+}
+
+.results-filter:focus path{
+  fill: var(--black);
+  outline: none;
 }
 
 .results-filter:not([href]) {
@@ -962,20 +975,24 @@ img {
   cursor: default;
 }
 
-.results-filter:not([href]):hover {
-  color: var(--blue);
+.results-filter:not([href]):hover path {
   cursor: default;
+  fill: var(--blue);
 }
 
-.results-filter:hover,
-.results-filter:focus {
-  color: var(--black);
-  outline: none;
+.results-filter-hover {
+  margin-top: 10px;
 }
 
-.results-filter:active {
-  color: var(--blue);
+.results-filter-hover:hover path,
+.results-filter-hover:focus path{
+  fill: var(--black);
 }
+
+.results-filter-hover:active path {
+  fill: var(--blue);
+}
+
 
 .results-filter-control {
   margin-left: auto;
@@ -983,22 +1000,30 @@ img {
 }
 
 .results-control-ascending {
-  margin-right: 12px;
+  margin-right: 8px;
 }
 
 .cards-hotel {
-  padding-left: 73px;
-  padding-right: 73px;
+  padding: 0 71px 0 73px;
   font-size: 14px;
   line-height: 21px;
   min-height: 150px;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: start;
   background-color: var(--white);
 }
 
 .image {
+  align-self: center;
+  margin-top: 4px;
+  width: 135px;
+  height: 90px;
+}
+
+.picture {
+  align-self: center;
+  margin-top: 7px;
   width: 135px;
   height: 90px;
 }
@@ -1007,8 +1032,7 @@ img {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
-  margin: 0;
-  padding-bottom: 7px;
+  margin: 0 0 7px 0;
 }
 
 .caption:hover {
@@ -1019,27 +1043,68 @@ img {
   color: var(--special-black);
 }
 
+.hotel-text-caption {
+  margin-top: 1px;
+  letter-spacing: -0.1px;
+}
+
 .cards-text {
+  letter-spacing: 0;
   margin: 0;
-  padding-bottom: 16px;
+}
+
+.cards-text-range {
+  margin-left: 35px;
+}
+
+.cards-text-range-control {
+  margin-top: 2px;
 }
 
 .hotel-text {
-  padding-left :29px;
-}
-
-.cards-text-control {
-  margin-left: auto;
-  padding-top: 29px;
+  margin-top: 25px;
+  padding-left: 30px;
   display: flex;
   flex-direction: column;
 }
 
+.hotel-text-control {
+  letter-spacing: -0.2px;
+  margin-top: 27px;
+  padding-left: 29px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-text-control {
+  margin-left: auto;
+  padding-top: 31px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-range {
+  margin-left: 18px;
+}
+
+.hotel-text-links {
+  margin-top: 19px;
+}
+
+.hotel-text-range {
+  margin-left: 60px;
+}
+
 .more {
-  padding: 3px 17px;
+  padding: 4px 17px;
   color: var(--white);
   text-align: center;
   background-color: var(--blue);
+}
+
+.more-control {
+  margin-right: 2px;
+  letter-spacing: -0.1px;
 }
 
 .more:hover,
@@ -1054,10 +1119,15 @@ img {
 }
 
 .reserve-link {
-  padding: 3px 17px;
+  padding: 4px 17px;
   color: var(--white);
   text-align: center;
   background-color: var(--ligth-brown);
+}
+
+.reserve-link-control {
+  padding: 4px 18px 4px 17px;
+  letter-spacing: 0.1px;
 }
 
 .reserve-link:hover,
@@ -1076,8 +1146,13 @@ img {
 }
 
 .rating {
-  margin-top: 47px;
+  padding: 3px 12px 2px 15px;
+  margin: 47px 2px 0 0;
   color: var(--rating);
   background-color: var(--date);
+}
+
+.rating-range {
+  padding: 4px 12px 2px 15px;
 }
 
