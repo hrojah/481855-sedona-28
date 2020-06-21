@@ -588,6 +588,7 @@ img {
 
 .map {
   display: block;
+  border: none;
 }
 
 .footer {
