@@ -71,6 +71,12 @@ img {
   position: relative;
 }
 
+.page-body::before,
+.page-bode::after {
+  content: "";
+
+}
+
 .hotel-body {
   height: 100%;
 }
@@ -370,6 +376,14 @@ img {
   z-index: 4;
 }
 
+.hide-form {
+  animation: hide 0.6s;
+}
+
+.form-show {
+  animation: show 0.6s;
+}
+
 .arrival-date {
   margin-top: -1px;
 }
@@ -563,10 +577,6 @@ img {
 .people .hotel-input {
   width: 39px;
   padding-left: 15px;
-}
-
-.hotel-input-child {
-
 }
 
 .submit {
@@ -1181,3 +1191,16 @@ img {
   padding: 4px 12px 2px 15px;
 }
 
+@keyframes hide {
+  0% { transform: translate(-50%, 0);
+  clip: rect(0, 568px, 395px, 0);}
+  100% { transform: translate(-50%, -395px);
+  clip: rect(395px, 568px, 395px, 0);}
+}
+
+@keyframes show {
+  0% { transform: translate(-50%, -395px);
+  clip: rect(395px, 568px, 395px, 0);}
+  100% { transform: translate(-50%, 0);
+  clip: rect(0, 568px, 395px, 0);}
+}
