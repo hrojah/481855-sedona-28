@@ -368,12 +368,17 @@ img {
   padding: 55px;
   background-color: var(--white);
   z-index: 4;
-  animation: show 0.6s;
 }
 
 .hide-form {
   animation: hide 0.6s;
   visibility: hidden;
+  transition: visibility 0.6s;
+}
+
+.show-form {
+  animation: show 0.6s;
+  visibility: visible;
   transition: visibility 0.6s;
 }
 
