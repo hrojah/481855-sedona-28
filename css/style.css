@@ -71,12 +71,6 @@ img {
   position: relative;
 }
 
-.page-body::before,
-.page-bode::after {
-  content: "";
-
-}
-
 .hotel-body {
   height: 100%;
 }
@@ -92,8 +86,8 @@ img {
 .wrapper {
   min-width: 1200px;
   margin: 0 auto;
-  box-shadow-right: 0 5px 15px rgba(0, 1, 1, 0.2);
   background-color: var(--white);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .header {
@@ -374,14 +368,13 @@ img {
   padding: 55px;
   background-color: var(--white);
   z-index: 4;
+  animation: show 0.6s;
 }
 
 .hide-form {
   animation: hide 0.6s;
-}
-
-.form-show {
-  animation: show 0.6s;
+  visibility: hidden;
+  transition: visibility 0.6s;
 }
 
 .arrival-date {
@@ -422,7 +415,7 @@ img {
 }
 
 .hotel-input {
-  padding: 0;
+  padding: 0 0 0 15px;
   height: 38px;
   background-color: var(--date);
   border: none;
@@ -449,11 +442,11 @@ img {
 }
 
 .arrival-date .hotel-input::placeholder {
-  padding: 6px 0 6px 15px;
+  padding: 6px 0 6px;
 }
 
 .departure-date .hotel-input::placeholder {
-  padding: 6px 0 6px 14px;
+  padding: 6px 0 6px;
 }
 
 .calendar {
@@ -576,7 +569,6 @@ img {
 
 .people .hotel-input {
   width: 39px;
-  padding-left: 15px;
 }
 
 .submit {
@@ -625,6 +617,7 @@ img {
 .footer {
   padding: 0 138px 8px 125px;
   min-height: 120px;
+  min-width: 1200px;
   display: flex;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.9);
@@ -1204,3 +1197,4 @@ img {
   100% { transform: translate(-50%, 0);
   clip: rect(0, 568px, 395px, 0);}
 }
+
