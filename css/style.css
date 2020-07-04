@@ -1225,7 +1225,7 @@ img {
   font-weight: bold;
   line-height: 26px;
   margin: 0 0 7px 0;
-  cursor: pointer;
+  color: var(--black);
 }
 
 .caption:hover {
