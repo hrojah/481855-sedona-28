@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper page-wrapper">
@@ -30,7 +30,7 @@
               <legend class="filter-title legend">Инфраструктура:</legend>
               <ul class="type-hotel-list">
                 <li class="type-hotel-item">
-                  <input class="visually-hidden type-hotel-input" type="checkbox" id="pool" name="pool" checked>
+                  <input class="visually-hidden type-hotel-input type-hotel-input-checked" type="checkbox" id="pool" name="pool" checked>
                   <label class="label" for="pool">Бассейн</label>
                 </li>
                 <li class="type-hotel-item">
@@ -47,15 +47,15 @@
               <legend class="filter-title legend">Тип жилья:</legend>
               <ul class="filter-type-hotel-list">
                 <li class="type-hotel-item">
-                  <input class="visually-hidden type-hotel-input" type="checkbox" id="hotel" name="hotel" checked>
+                  <input class="visually-hidden type-hotel-input type-hotel-input-checked" type="checkbox" id="hotel" name="hotel" checked>
                   <label class="label" for="hotel">Гостиница</label>
                 </li>
                 <li class="type-hotel-item">
-                  <input class="visually-hidden type-hotel-input" type="checkbox" id="motel" name="motel" checked>
+                  <input class="visually-hidden type-hotel-input type-hotel-input-checked" type="checkbox" id="motel" name="motel" checked>
                   <label class="label" for="motel">Мотель</label>
                 </li>
                 <li class="type-hotel-item">
-                  <input class="visually-hidden type-hotel-input" type="checkbox" id="apartments" name="apartments" checked>
+                  <input class="visually-hidden type-hotel-input type-hotel-input-checked" type="checkbox" id="apartments" name="apartments" checked>
                   <label class="label" for="apartments">Апартаменты</label>
                 </li>
               </ul>
@@ -106,7 +106,7 @@
         <article class="cards-hotel">
           <img class="image" src="img/hotel1.jpg" width="135" height="90" alt="фото гостиницы Amara resort & spa">
           <div class="hotel-text">
-            <h2 class="caption">Amara resort & spa</h2>
+            <a class="caption">Amara resort & spa</a>
             <p class="cards-text">Гостиница <span class="cards-text-range">от 4000 р.</span></p>
             <div class="hotel-text-links">
               <a class="more" href="">Подробнее</a>
@@ -121,7 +121,7 @@
         <article class="cards-hotel">
           <img class="image" src="img/hotel2.jpg" width="135" height="90" alt="фото гостиницы Desert quail inn">
           <div class="hotel-text">
-            <h2  class="caption">Desert quail inn</h2>
+            <a  class="caption">Desert quail inn</a>
             <p class="cards-text price">Мотель <span class="hotel-text-range">от 3000 р.</span></p>
             <div class="hotel-text-links">
               <a class="more" href="">Подробнее</a>
@@ -136,7 +136,7 @@
         <article class="cards-hotel cards-hotel-border">
           <img class="picture" src="img/hotel3.jpg" width="135" height="90" alt="фото гостиницы Villas at poco diablo">
           <div class="hotel-text-control">
-            <h2 class="caption">Villas at poco diablo</h2>
+            <a class="caption">Villas at poco diablo</a>
             <p class="cards-text price">Апартаменты <span class="text-range">от 2000 р.</span></p>
             <div class="hotel-text-links">
               <a class="more more-control" href="">Подробнее</a>

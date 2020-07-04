@@ -64,10 +64,8 @@ img {
   height: auto;
 }
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 .page {
@@ -460,13 +458,12 @@ img {
   width: 346px;
 }
 
-.form-row .hotel-input {
-  width: 346px;
-}
-
 .hotel-input {
   padding: 0 0 0 13px;
   height: 38px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
   background-color: var(--date);
   border: none;
 }
@@ -480,6 +477,13 @@ img {
   outline: 2px solid var(--border-color-input);
 }
 
+.hotel-input::placeholder {
+  text-transform: uppercase;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--black);
+}
+
 .hotel-input::-webkit-input-placeholder {
   text-transform: uppercase;
   line-height: 26px;
@@ -489,20 +493,13 @@ img {
 
 .hotel-input::-moz-placeholder {
   text-transform: uppercase;
-  line-height: 26px;
+  line-height: 38px;
   font-weight: bold;
   color: var(--black);
-  align-self: center;
+  padding-top: 10px;
 }
 
 .hotel-input:-ms-input-placeholder {
-  text-transform: uppercase;
-  line-height: 26px;
-  font-weight: bold;
-  color: var(--black);
-}
-
-.hotel-input::placeholder {
   text-transform: uppercase;
   line-height: 26px;
   font-weight: bold;
@@ -675,6 +672,7 @@ img {
   width: 458px;
   height: 58px;
   font-size: 21px;
+  font-weight: bold;
   text-transform: uppercase;
   line-height: 26px;
   color: var(--white);
@@ -715,7 +713,7 @@ img {
 }
 
 .footer {
-  padding: 0 138px 8px 125px;
+  padding: 4px 138px 8px 125px;
   min-height: 120px;
   min-width: 1200px;
   display: -webkit-box;
@@ -747,6 +745,10 @@ img {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
+}
+
+.index-footer .contacts-content {
+  margin-top: 16px;
 }
 
 .contacts-phone {
@@ -888,7 +890,7 @@ img {
 }
 
 .legend-control {
-  margin-left: 2px;
+  margin-left: 1px;
   margin-bottom: 11px;
   letter-spacing: -0.1px;
 }
@@ -1028,12 +1030,16 @@ img {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.type-hotel-input:focus +label:before {
+.type-hotel-input:focus + label:before {
   outline: 2px solid var(--black);
 }
 
-.type-hotel-input:disabled {
-  color: var(--checkbox-block);
+.type-hotel-input:disabled + label:before {
+  background-image: url("../img/checkbox-off.svg");
+}
+
+.type-hotel-input-checked:disabled + label:before {
+  background-image: url("../img/checkbox-on-disabled.svg");
 }
 
 .label {
@@ -1219,6 +1225,7 @@ img {
   font-weight: bold;
   line-height: 26px;
   margin: 0 0 7px 0;
+  cursor: pointer;
 }
 
 .caption:hover {
