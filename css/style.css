@@ -1201,6 +1201,7 @@ img {
 }
 
 .cards-hotel-border {
+  box-sizing: content-box;
   border-bottom: 1px solid var(--border-color-input);
 }
 
