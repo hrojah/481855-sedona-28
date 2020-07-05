@@ -713,8 +713,7 @@ img {
 }
 
 .footer {
-  margin-top: 3px;
-  padding: 0 138px 8px 125px;
+  padding: 0 138px 0 125px;
   min-height: 120px;
   min-width: 1200px;
   display: -webkit-box;
@@ -722,6 +721,7 @@ img {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
+  align-items: center;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -742,7 +742,6 @@ img {
 }
 
 .contacts-content {
-  margin-top: 19px;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -754,6 +753,7 @@ img {
 
 .contacts-phone {
   margin-top: 9px;
+  margin-bottom: 16px;
   display: block;
   color: var(--black);
   text-decoration: none;
