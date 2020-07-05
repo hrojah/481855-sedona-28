@@ -713,7 +713,7 @@ img {
 }
 
 .footer {
-  padding: 4px 138px 8px 125px;
+  padding: 0 138px 8px 125px;
   min-height: 120px;
   min-width: 1200px;
   display: -webkit-box;
@@ -881,7 +881,7 @@ img {
 }
 
 .filter-control {
-  padding-right: 118px;
+  padding-right: 117px;
 }
 
 .legend {
@@ -925,7 +925,7 @@ img {
 }
 
 .max-price {
-  padding-left: 53px;
+  padding-left: 52px;
   padding-bottom: 2px;
   padding-right: 2px;
 }
@@ -1038,7 +1038,7 @@ img {
   background-image: url("../img/checkbox-off.svg");
 }
 
-.type-hotel-input-checked:disabled + label:before {
+.type-hotel-input:checked:disabled + label:before {
   background-image: url("../img/checkbox-on-disabled.svg");
 }
 
@@ -1182,7 +1182,7 @@ img {
 }
 
 .cards-hotel {
-  margin-bottom: 2px;
+  margin-top: 1px;
   padding: 0 71px 0 73px;
   font-size: 14px;
   line-height: 21px;
@@ -1247,7 +1247,7 @@ img {
 
 .hotel-text {
   margin-top: 24px;
-  padding-left: 30px;
+  padding-left: 29px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1259,7 +1259,7 @@ img {
 
 .hotel-text-control {
   letter-spacing: -0.2px;
-  margin-top: 23px;
+  margin-top: 24px;
   padding-left: 29px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1318,15 +1318,15 @@ img {
 }
 
 .reserve-link {
-  padding: 4px 17px 5px;
+  padding: 4px 18px 5px;
   color: var(--white);
   text-align: center;
   background-color: var(--ligth-brown);
 }
 
 .reserve-link-control {
-  padding: 4px 18px 4px 17px;
-  letter-spacing: 0.1px;
+  padding: 3px 19px 6px 17px;
+  letter-spacing: -0.1px;
 }
 
 .reserve-link:hover,
