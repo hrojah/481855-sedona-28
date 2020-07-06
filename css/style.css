@@ -139,6 +139,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -234,6 +235,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .feature {
@@ -297,6 +299,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   min-height: 330px;
   background-color: var(--white);
@@ -377,7 +380,7 @@ img {
   position: relative;
   color: var(--white);
   width: 568px;
-  height: 86px;
+  min-height: 86px;
   margin: 0 auto;
   font-size: 21px;
   font-weight: bold;
@@ -400,11 +403,13 @@ img {
 
 .search-hotel-form {
   position: absolute;
-  width: 568px;
+  min-width: 568px;
+  max-height: 395px;
+  overflow: auto;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
-  padding: 55px;
+  padding: 55px 46px;
   background-color: var(--white);
   z-index: 4;
 }
@@ -631,6 +636,8 @@ img {
 }
 
 .form-row {
+  margin-left: 10px;
+  margin-right: 9px;
   position: relative;
 }
 
@@ -670,7 +677,7 @@ img {
 .submit {
   padding: 0;
   width: 458px;
-  height: 58px;
+  min-height: 58px;
   font-size: 21px;
   font-weight: bold;
   text-transform: uppercase;
@@ -745,6 +752,7 @@ img {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
+  margin: 0;
 }
 
 .index-footer .contacts-content {
@@ -781,6 +789,7 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .social-list-item {
@@ -832,7 +841,6 @@ img {
   margin: 0;
   font-size: 14px;
   line-height: 26px;
-  padding-top: 1px;
 }
 
 .authors-logo {
@@ -873,6 +881,7 @@ img {
   background-image: url("../img/filter-background.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-color: var(--blue);
 }
 
 .filter-title {
@@ -1087,6 +1096,7 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  flex-wrap: wrap;
   background-color: var(--white);
 }
 
@@ -1097,6 +1107,7 @@ img {
   line-height: 26px;
   padding-left: 73px;
   padding-right: 47px;
+  max-width: 260px;
 }
 
 .sort {
