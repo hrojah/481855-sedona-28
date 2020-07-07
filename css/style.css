@@ -403,13 +403,13 @@ img {
 
 .search-hotel-form {
   position: absolute;
-  min-width: 568px;
+  width: 568px;
   max-height: 395px;
   overflow: auto;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
-  padding: 55px 46px;
+  padding: 55px;
   background-color: var(--white);
   z-index: 4;
 }
@@ -435,18 +435,19 @@ img {
 }
 
 .desc {
+  width: 96px;
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
 }
 
 .arrival-date-lable {
-  margin-left: -1px;
+  margin-left: -4px;
   margin-right: 20px;
 }
 
 .departure-date-lable {
-  margin-left: -1px;
+  margin-left: -2px;
   margin-right: 17px;
 }
 
@@ -471,6 +472,10 @@ img {
   text-transform: uppercase;
   background-color: var(--date);
   border: none;
+}
+
+.hotel-input-control {
+  padding-right: 32px;
 }
 
 .hotel-input:hover {
@@ -636,8 +641,9 @@ img {
 }
 
 .form-row {
-  margin-left: 10px;
-  margin-right: 9px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
   position: relative;
 }
 
