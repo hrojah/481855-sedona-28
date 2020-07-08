@@ -203,7 +203,7 @@ img {
 
 .slogan {
   height: 509px;
-  background-image: url("../img/background_mountains.png"),
+  background-image: url("../img/background-mountains.png"),
   url("../img/mountains.jpg");
   background-position: center bottom -1px, center top;
   background-repeat: no-repeat;
@@ -892,7 +892,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   min-height: 217px;
-  background-image: url("../img/filter_background.png");
+  background-image: url("../img/filter-background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--blue);
@@ -1051,7 +1051,7 @@ img {
   left: -41px;
   width: 27px;
   height: 23px;
-  background-image: url("../img/checkbox_on.svg");
+  background-image: url("../img/checkbox-on.svg");
 }
 
 .type-hotel-input:focus + label:before {
@@ -1059,11 +1059,11 @@ img {
 }
 
 .type-hotel-input:disabled + label:before {
-  background-image: url("../img/checkbox_off.svg");
+  background-image: url("../img/checkbox-off.svg");
 }
 
 .type-hotel-input:checked:disabled + label:before {
-  background-image: url("../img/checkbox_on_disabled.svg");
+  background-image: url("../img/checkbox-on-disabled.svg");
 }
 
 .label {

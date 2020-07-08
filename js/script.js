@@ -12,6 +12,7 @@ plus.removeAttribute("required");
 search.addEventListener("click", function (evt) {
 
     searchForm.classList.toggle("show-form");
+    searchForm.classList.remove("error-form");
 })
 
 searchForm.addEventListener("submit", function (evt) {
